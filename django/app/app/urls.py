@@ -7,6 +7,8 @@ from .views import (
     view_with_multiprocessing,
     demo,
     demo_async,
+    demo_1_sync,
+    demo_1_async,
 )
 
 
@@ -17,4 +19,6 @@ urlpatterns = [
     path('async/', async_view),
     path('demo/', demo),
     path('demo/async/', demo_async),
+    path('demo/1/sync/', demo_1_sync),
+    path('demo/1/async/', demo_1_async),
 ]
