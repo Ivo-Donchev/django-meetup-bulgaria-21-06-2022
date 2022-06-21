@@ -9,6 +9,7 @@ from .views import (
     demo_async,
     demo_1_sync,
     demo_1_async,
+    Demo2Api,
 )
 
 
@@ -21,4 +22,5 @@ urlpatterns = [
     path('demo/async/', demo_async),
     path('demo/1/sync/', demo_1_sync),
     path('demo/1/async/', demo_1_async),
+    path('demo/2/', Demo2Api.as_view()),
 ]
